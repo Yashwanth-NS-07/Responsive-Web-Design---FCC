@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+nav header h1 {
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    width: 100%;
+    height: 225px;
+    border: 1.5px solid black;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-y: scroll;
+}
+
+nav a {
+    width: 100%;
+    color: rgb(51, 51, 51);
+    padding: 0.8rem 1.8rem 0.8rem  1.8rem;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+.main-section p,.main-section ul {
+    color: rgb(62, 62, 62);
+    margin: 1rem;
+    line-height: 1.5rem;
+}
+
+.main-section ul {
+    margin-left: 4rem;
+    margin-bottom: -1rem;
+}
+
+.main-section header h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.main-section li {
+    padding-bottom: 1rem;
+}
+
+div {
+    background-color: rgb(247, 247, 247);
+    margin: -10px 0 -5px 3rem;
+    padding: 0.7rem;
+    border-radius: 5px;
+}
+
+div code {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color:rgb(92, 92, 92)
+}
+
+#Data_types ul ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 814px) {
+    body {
+        display: flex;
+    }
+    nav {
+        height: 100vh;
+        width: 35cm;
+        border-right: 2px solid rgb(145, 145, 145);
+    }
+    main {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    nav ul {
+        overflow: unset;
+        height: auto;
+        border: none;
+    }
+    nav a {
+        border: none;
+        border-top: 1px solid black;
+    }
+}
