@@ -1,0 +1,246 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    background-color: whitesmoke;
+}
+
+img {
+    display: block;
+}
+
+#header {
+    background-color: whitesmoke;
+    padding: 2rem 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    width: 50%;
+}
+
+nav a {
+    padding: 0.3rem 0.5rem;
+}
+
+nav a, nav a:visited, footer ul a, footer ul a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:focus, nav a:hover, footer ul a:focus, footer ul a:hover {
+    background-color: orange;
+    border-radius: 4px;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-left: 1rem
+}
+
+footer a {
+    padding: 2px 4px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#header-img {
+    padding: 0 0 0 20px;
+    width: max(230px, 22vw);
+    aspect-ratio: 536 / 61;
+}
+
+#main, footer {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#main {
+    margin-top: 4rem;
+}
+
+section {
+    scroll-margin-top: 6rem;
+}
+section:first-of-type {
+    text-align: center;
+}
+
+section:first-of-type h2 {
+    padding: 1rem;
+}
+
+section:first-of-type input:not([type='submit']) {
+    padding: 0.3rem;
+    width: 30%;
+    min-width: 150px;
+    max-width: 300px;
+    border: 2px solid rgb(100, 99, 99);
+    border-radius: 3px;
+    margin: 0.5rem auto;
+}
+
+section:first-of-type input[type='submit'], section:last-child button {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(255, 181, 44, 0.829);
+    padding: 0.5rem 1rem; 
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem auto;
+}
+
+section:first-of-type input[type='submit']:hover, section:last-child button:hover {
+    background-color: rgb(255, 166, 0);
+    box-shadow: 0 0 10px 0  rgba(255, 161, 94, 0.8);
+
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    margin: -1px;
+}
+
+main section:nth-child(2) ul {
+    margin: 3rem;
+    line-height: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+main section:nth-child(2) ul li {
+    padding-left: 1rem;
+    list-style-type: "\1F525";
+}
+
+main section:nth-child(2) ul li::marker {
+    font-size: 1.5rem;
+    color: rgb(255, 166, 0);
+}
+
+main section:nth-child(2) ul li:nth-child(2) {
+    list-style-type: "\1F69A";
+}
+
+main section:nth-child(2) ul li:last-child {
+    list-style-type: "\1F50B";
+}
+
+iframe {
+    display: block;
+}
+
+main section:nth-child(3) iframe {
+    margin: 3rem auto;
+}
+
+footer {
+    background-color: rgb(233, 233, 233);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+footer p {
+    padding: 0.5rem 0 0 0;
+    font-size: 0.9rem;
+    color:rgb(89, 89, 89)
+}
+
+main section:last-child {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem auto;
+    text-align: center;
+    gap: 1rem;
+}
+
+main section:last-child article {
+    background-color: rgb(239, 239, 239);
+    width: 50%;
+    max-width: 284px;;
+    min-width: 200px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+main section:last-child article h3 {
+    border-radius: 4px 4px 0 0;
+    background-color: rgb(208, 208, 208);
+    padding: 1rem 0;
+}
+
+main section:last-child article h2 {
+    padding: 1rem 0;
+}
+
+main section:last-child article p {
+    padding: 5px 0;
+}
+
+main section:last-child article button {
+    margin: 1rem 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    #main {
+        margin-top: 10rem;
+    }
+}
